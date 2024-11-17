@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    border: 0;
+  }
+  
+  header {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #c7c7c7;
+  }
+  
+  aside {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #8f8f8f;
+  }
+    
+  main {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #e0e0e0;
+    padding: 1rem;
+  }
+  
+  footer {
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #c7c7c7;
+  }
+
+  main .galeria > div img {
+      width: 95%;
+      height: auto;
+  }
+
+  #galeria1 {
+    background-color: rgb(151, 151, 151);
+  }
+
+  #galeria2 {
+    background-color: rgb(157, 207, 255);
+  }
+
+  #galeria3 {
+    background-color: rgb(255, 202, 235);
+  }
+
+  #galeria4 {
+    background-color: rgb(255, 255, 173);
+  }
+
+  #galeria5 {
+    background-color: #ffb889;
+  }
+
+  h1,h2 {
+    text-align: center;
+  }
+
+  .linkaço {
+    color: rgb(209, 209, 209);
+  }
+
+  .linkdragao {
+    color: rgb(157, 207, 255);
+  }
+
+  .linkfada {
+    color: rgb(255, 202, 235);
+  }
+
+  .linkeletrico {
+    color: rgb(255, 255, 173);
+  }
+
+  .linkfogo {
+    color: #ffb889;
+  }
+
+  .linkchat {
+    color: black;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  dialog {
+    height: 25vh;
+    width: 25vw;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpAefnJS6OOU02DFCp-iIWyJ9xQEJYFDQ-g&s);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    padding: 20px;
+  }
+
+  dialog h1{
+    color: rgb(7, 60, 121);
+  }

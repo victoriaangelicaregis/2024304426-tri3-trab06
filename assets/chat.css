@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #d3554c;
+    color: rgb(255, 255, 255);
+  }
+
+  header img.thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  main {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding: 15px;
+    background-image: url(https://i.pinimg.com/originals/62/40/b6/6240b66d5c50c8661eee78b439a7d33c.jpg);
+  }
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    max-width: 60%; 
+  }
+  
+  .message .content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .message .time {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #ffffff;
+    text-align: right;
+  }
+  
+  .message:not(.owner) {
+    align-self: flex-start; 
+    background-color: #fca2a2; 
+  }
+  
+  .message:not(.owner)::after {
+    content: "";
+    position: absolute;
+    bottom: -8px; 
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fca2a2;
+    border-radius: 5px;
+  }
+  
+  .message.owner {
+    align-self: flex-end; 
+    background-color: #fca2a2; 
+    color: white;
+  }
+  
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px 20px;
+    background-color: #64a7e2;
+    border-top: 1px solid #93ddff;
+    gap: 10px;
+  }
+  
+  footer input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: calc(100% - 10px); 
+    box-sizing: border-box;
+  }
+  
+  footer button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #93ddff; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
